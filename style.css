@@ -1,0 +1,120 @@
+body {
+    max-height: 100vh;
+    overflow-y: scroll;
+}
+
+* {
+    transition: all 150ms;
+}
+
+#left {
+    min-height: 100vh;
+    max-height: 100vh;
+    position: fixed;
+    overflow-y: scroll;
+    top: 0;
+    left: 0;
+}
+
+#left a:hover i {
+    transform: scale(1.1);
+}
+
+#center {
+    margin-left: 20%;
+}
+
+#end {
+    position: fixed;
+    top: vh;
+    right: 5vh;
+    overflow: scroll;
+}
+
+.ana-story {
+    overflow: scroll;
+    width: 100%;
+}
+
+.ana-story::-webkit-scrollbar {
+    display: none;
+    /* WebKit tabanlı tarayıcılarda gizleme (Chrome, Safari) */
+}
+
+.box {
+    width: 70px;
+    height: 70px;
+    padding: 10px;
+    background-image: url(https://images.unsplash.com/photo-1624395213043-fa2e123b2656?q=80&w=2848&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 100px;
+}
+
+#is {
+    display: none;
+}
+
+@media screen and (min-width: 1000px) {
+    #left a {
+        display: flex;
+        justify-content: left;
+    }
+
+    .ax {
+        display: block;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    #end {
+        display: none;
+    }
+
+    #left div a p {
+        display: none;
+    }
+
+    #left .logo img {
+        display: none;
+    }
+
+    #left {
+        width: 100%;
+    }
+
+    .menu {
+        position: fixed;
+        background-color: #fff;
+        width: 100%;
+        bottom: 0;
+        height: auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .menu a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .menu .sd {
+        display: none;
+    }
+
+    #center {
+        margin-left: 0;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    #is {
+        display: block;
+    }
+
+    .ax {
+        display: none;
+    }
+}
